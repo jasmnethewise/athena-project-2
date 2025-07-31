@@ -12,18 +12,82 @@ body {
     background-size: 300px 300px; 
     background-color: black;
     height: 100dvh; 
+
 }
 .level {
     color: #DD1FDD;
     font-family: pressstart , sans-serif;
     font-size: 55px;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 15px;
+    padding-bottom: 10px;
     text-shadow:
     -1px -1px 0 white,
      1px -1px 0 white,
     -1px  1px 0 white,
      1px  1px 0  white;
     text-decoration: underline;
+}
+.levels-container {
+    width: 1500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    height: 500px;
+}
+.level-box {
+   background-color: #DD1FDD;
+   color: white;
+   font-family: pressstart, sans-serif;
+   font-size: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 12px;
+   height: 200px;
+   cursor: pointer;
+   transition: transform 0.2s ease;
+}
+
+.level-box:hover {
+  transform: scale(1.1);
+  background-color: #ff4dfd;
+}
+@media (max-width: 768px) {
+  .levels-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: 1100px;
+    width: 500px;
+  }
+
+  .level {
+    font-size: 35px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .levels-container {
+        grid-template-columns: repeat(2, 1fr);
+        height: 1100px;
+        width: 600px;
+    }
+    .level {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+    .levels-container {
+        grid-template-columns : repeat(2, 1fr);
+        height: 1100px;
+        width: 850px;
+
+    }
 }
