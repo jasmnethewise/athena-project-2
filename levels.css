@@ -1,0 +1,29 @@
+@font-face {
+    src: url(fonts/PressStart2P-Regular.ttf);
+    font-family: pressstart;
+}
+
+
+body {
+    background-image: url(images/purble.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; 
+    background-size: 300px 300px; 
+    background-color: black;
+    height: 100dvh; 
+}
+.level {
+    color: #DD1FDD;
+    font-family: pressstart , sans-serif;
+    font-size: 55px;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 15px;
+    text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0  white;
+    text-decoration: underline;
+}

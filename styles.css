@@ -17,7 +17,7 @@ body {
   height: 100vh;    
 }
 .main-pic {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   display: block;
   top: -20px;
@@ -32,7 +32,7 @@ body {
   top: 87%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; 
+  width: 400px; 
   height: auto; 
   
 }
