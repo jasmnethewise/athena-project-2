@@ -1,6 +1,38 @@
 body {
-    background-image: url(images/lala.gif);
+    background-image: url(images/purble.gif);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat; 
+    background-size: 300px 300px; 
+    background-color: black;
+    height: 100dvh;
+    overflow: hidden;
+    margin: 0;
+   
+}
+.main-pic-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  height: 100vh;    
+}
+.main-pic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  top: -20px;
+  position: relative;
+}
+.play-button-container {
+  cursor: pointer;
+
+}
+.play-button{
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; 
+  height: auto; 
+  
 }
