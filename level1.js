@@ -17,7 +17,7 @@ cards.forEach(card => {
         second.classList.add("matched");
         flippedCards = [];
 
-        checkIfLevelFinished(); // ✅ بس بنحتفل لو كلهم اتجابوا
+        checkIfLevelFinished(); 
       } else {
         setTimeout(() => {
           first.classList.remove("flipped");
