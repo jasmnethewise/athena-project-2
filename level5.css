@@ -35,12 +35,13 @@ body {
     align-items: center;
     flex-direction: row;
     position: relative;
-    top: 50px;
-    padding-right: 700px;
+    top: 35px;
+    padding-right: 450px;
+    padding-bottom: 80px;
 }
 .game-board {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 400px;
   margin: auto;
@@ -90,11 +91,12 @@ body {
   0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
   100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
   .game-board {
     grid-template-columns: repeat(2, 1fr); 
   }
   .main-wrapper {
-    padding: 0;
+    padding-right: 0;
+    padding-bottom: 80px;
   }
 }
