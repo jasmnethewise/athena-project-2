@@ -35,7 +35,8 @@ body {
   align-items: center;
   flex-direction: row;
   position: relative;
-  top: 20px;
+  top: 50px;
+  padding-right: 250px;
 }
 .game-board {
   display: grid;
@@ -47,12 +48,11 @@ body {
 
 .card {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   perspective: 1000px;
   cursor: pointer;
   
-
 }
 
 .card img {
@@ -100,5 +100,8 @@ body {
 @media (max-width: 768px) {
   .game-board {
     grid-template-columns: repeat(2, 1fr); 
+  }
+  .main-wrapper {
+    padding: 0;
   }
 }

@@ -30,7 +30,7 @@ body {
     text-decoration: underline;
 }
 .levels-container {
-    width: 1500px;
+    width: 1300px;
     margin: 50px auto;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -90,7 +90,7 @@ body {
     padding-left: 50px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1600px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
     .levels-container {
         grid-template-columns : repeat(2, 1fr);
         height: 1100px;

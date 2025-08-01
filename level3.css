@@ -2,22 +2,21 @@
     src: url(fonts/PressStart2P-Regular.ttf);
     font-family: pressstart;
 }
-
-
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url(images/purble.gif);
     background-size: cover;
     background-position: center;
-    background-repeat: repeat; 
-    background-size: 300px 300px; 
+    background-repeat: repeat;
+    background-size: 300px 300px;
     background-color: black;
-    height: 100dvh; 
-    
-
+    height: 100dvh;
+    margin: 0;
 }
 .level {
     color: #DD1FDD;
-    font-family: pressstart , sans-serif;
+    font-family: pressstart, sans-serif;
     font-size: 55px;
     flex-direction: column;
     padding-left: 50px;
@@ -27,12 +26,21 @@ body {
     -1px -1px 0 white,
      1px -1px 0 white,
     -1px  1px 0 white,
-     1px  1px 0  white;
+     1px  1px 0 white;
     text-decoration: underline;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+  padding-right: 450px;
 }
 .game-board {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 400px;
   margin: auto;
@@ -44,7 +52,7 @@ body {
   height: 200px;
   perspective: 1000px;
   cursor: pointer;
-  top: 40%;
+  
 }
 
 .card img {
@@ -88,4 +96,12 @@ body {
 @keyframes pop {
   0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
   100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+@media (max-width: 1050px) {
+  .game-board {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .main-wrapper {
+    padding: 0;
+  }
 }
