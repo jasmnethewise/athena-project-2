@@ -64,11 +64,11 @@ body {
   .levels-container {
     grid-template-columns: repeat(2, 1fr);
     height: 1100px;
-    width: 500px;
+    width: 400px;
   }
 
   .level {
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 20px;
   }
 }
@@ -87,7 +87,7 @@ body {
     .levels-container {
         grid-template-columns : repeat(2, 1fr);
         height: 1100px;
-        width: 850px;
+        width: 800px;
 
     }
 }
