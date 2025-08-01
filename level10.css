@@ -35,21 +35,21 @@ body {
     align-items: center;
     flex-direction: row;
     position: relative;
-    top: 75px;
-    padding-right: 930px;
+    top: 30px;
+    padding-right: 650px;
     padding-bottom: 80px;
 }
 .game-board {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   width: 400px;
   margin: auto;
 }
 .card {
     position: relative;
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ body {
   0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
   100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1000px) {
   .game-board {
     grid-template-columns: repeat(2, 1fr); 
   }
