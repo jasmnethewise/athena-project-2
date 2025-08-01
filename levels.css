@@ -54,7 +54,14 @@ body {
    height: 200px;
    cursor: pointer;
    transition: transform 0.2s ease;
+   
 }
+  .level-box:visited {
+    color: white;
+    text-decoration: none;
+
+
+  }
 
 .level-box:hover {
   transform: scale(1.1);
